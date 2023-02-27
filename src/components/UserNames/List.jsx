@@ -10,19 +10,21 @@ const List = () => {
       {/* List */}
       <div>
         {/* titles */}
-        <div className="grid grid-cols-3 bg-gray-400 py-1 rounded-md ">
+        <div className="grid grid-cols-3 bg-secondary py-2 rounded-t-lg ">
           {titles.map((val, i) => (
             <div key={i}>{val}</div>
           ))}
         </div>
 
         {/* data here */}
-        <div className="flex flex-col">
+        <div className="flex flex-col mt-0.5 divide-y-[0.1rem] divide-secondary">
           {DummyData.map((val, i) => (
-            <div key={i} className="grid grid-cols-3 py-1 hover:bg-gray-500">
-              <div>{val.userName}</div>
-              <div>{val.minimumBid}</div>
-              <div>{`${val.days} days ${val.hours} hours `}</div>
+            <div key={i}>
+              <div className="grid grid-cols-3 py-2  hover:bg-secondary">
+                <div>{val.userName}</div>
+                <div>{val.minimumBid}</div>
+                <div>{`${val.days} days ${val.hours} hours `}</div>
+              </div>
             </div>
           ))}
         </div>
