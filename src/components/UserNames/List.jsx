@@ -6,11 +6,11 @@ const List = () => {
   return (
     <div>
       {/* Actions */}
-      <div className="text-2xl">Actions</div>
+      {/* <div className="text-2xl">Actions</div> */}
       {/* List */}
       <div>
         {/* titles */}
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-3 bg-gray-400 py-1 rounded-md ">
           {titles.map((val, i) => (
             <div key={i}>{val}</div>
           ))}
@@ -19,7 +19,7 @@ const List = () => {
         {/* data here */}
         <div className="flex flex-col">
           {DummyData.map((val, i) => (
-            <div key={i} className="grid grid-cols-3">
+            <div key={i} className="grid grid-cols-3 py-1 hover:bg-gray-500">
               <div>{val.userName}</div>
               <div>{val.minimumBid}</div>
               <div>{`${val.days} days ${val.hours} hours `}</div>
