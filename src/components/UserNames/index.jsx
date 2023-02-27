@@ -1,9 +1,10 @@
 import React from "react";
 import List from "./List";
+import { IoSearch } from "react-icons/io5";
 
 const UserNames = () => {
   return (
-    <div className="bg-gray-600 w-[50rem] text-white text-center px-2 flex flex-col gap-5 pt-4">
+    <div className="bg-primary w-[50rem] text-white text-center px-2 flex flex-col gap-5 pt-4">
       <div className="flex flex-col gap-2">
         <div className="text-4xl font-bold">Buy and Sell Usernames</div>
         <div>
@@ -12,8 +13,10 @@ const UserNames = () => {
           Learn more
         </div>
       </div>
-      <div className="bg-gray-400 flex items-center text-xl">
-        <div>Search</div>
+      <div className="bg-secondary flex items-center text-xl px-3">
+        <div className="px-2">
+          <IoSearch />
+        </div>
         <input
           type="text"
           name="Search"

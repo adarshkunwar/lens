@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Layout>
-        <div className="flex justify-center bg-gray-800">
+        <div className="flex justify-center bg-primary">
           <UserNames />
         </div>
       </Layout>
